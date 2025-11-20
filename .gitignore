@@ -1,0 +1,4 @@
+__pycache__/
+annotations_orig/
+syn_images/
+*.csv
