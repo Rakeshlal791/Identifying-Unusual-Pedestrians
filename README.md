@@ -14,14 +14,14 @@ Our dataset class returns a per-instance bounding box and normalized pose keypoi
 
 The following are some samples from the dataset.
 
-<img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/main/images/ped_samples.png?raw=true" width="520">
+<img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/master/images/ped_samples.png?raw=true" width="520">
 
 # Model and Training
 A Variational Autoencoder (VAE) is employed to model pedestrian pose and bounding box features, capturing structural information such as bone angles and limb lengths.
 
 We train our model with batch size 2, and for 20 epochs on train and val ECP dataset.
 
-![alt text](https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/main/images/vae_model.png?raw=true)
+![alt text](https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/master/images/vae_model.png?raw=true)
 
 The input feature vector **x** encodes:
 
@@ -81,11 +81,11 @@ Below are some examples of our synthetic pedestrians for each anomalous category
 
 | Category | Examples |
 |-----------|-----------|
-| **Sitting** | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/main/images/sitting_row.png?raw=true" width="520"> |
-| **Bending** | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/main/images/bending_row.png?raw=true" width="520"> |
-| **Crawling** | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/main/images/crawling_row.png?raw=true" width="520"> |
-| **Lying** | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/main/images/lying_row.png?raw=true" width="520"> |
-| **Imbalanced** | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/main/images/imbalanced_row.png?raw=true" width="520"> |
+| **Sitting** | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/master/images/sitting_row.png?raw=true" width="520"> |
+| **Bending** | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/master/images/bending_row.png?raw=true" width="520"> |
+| **Crawling** | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/master/images/crawling_row.png?raw=true" width="520"> |
+| **Lying** | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/master/images/lying_row.png?raw=true" width="520"> |
+| **Imbalanced** | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/master/images/imbalanced_row.png?raw=true" width="520"> |
 
 ---
 
@@ -106,7 +106,7 @@ where:
 
 Higher scores indicate poses that deviate more strongly from the learned “normal” distribution.
 
-<img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/main/images/latent_mu.png?raw=true" width="520">
+<img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/master/images/latent_mu.png?raw=true" width="520">
 
 We compute the appropriate threshold for anomaly score from the AUC and report the following metrics on model performance.
 
@@ -120,7 +120,8 @@ We compute the appropriate threshold for anomaly score from the AUC and report t
 ---
 | Confusion Matrix | Anomaly Score distribution |
 |-----------|-----------|
-| <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/main/images/confusion_matrix.png?raw=true" height="500"> | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/main/images/vae_score.png?raw=true" height="500"> |
+| <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/master/images/confusion_matrix.png?raw=true" height="500"> | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/master/images/vae_score.png?raw=true" height="500"> |
 
 ---
+
 
