@@ -1,4 +1,4 @@
-# The-Fallen-Pedestrians
+# Identifying-Unusual-Pedestrians
 An anomaly detection Variational Autoencoder (VAE) to identify unusual pedestrians in the scene.
 
 # Description
@@ -123,5 +123,6 @@ We compute the appropriate threshold for anomaly score from the AUC and report t
 | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/master/images/confusion_matrix.png?raw=true" height="500"> | <img src="https://github.com/Rakeshlal791/The-Fallen-Pedestrians/blob/master/images/vae_score.png?raw=true" height="500"> |
 
 ---
+
 
 
